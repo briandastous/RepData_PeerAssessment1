@@ -70,10 +70,11 @@ plot(byInterval$interval, byInterval$steps, type="l", xlab= "Interval", ylab= "M
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 ```r
-maxInterval = which.max(byInterval$steps)
-maxIntervalSteps = byInterval[maxInterval, 'steps']
+maxIntervalIndex = which.max(byInterval$steps)
+maxInterval = byInterval[maxIntervalIndex, 'interval']
+maxIntervalSteps = byInterval[maxIntervalIndex, 'steps']
 ```
-Interval 104 on average across all the days in the dataset, contains the maximum number of steps (206.17).
+Interval 835 contains the maximum average number of steps across all days in the dataset (206.17).
 
 
 ## Imputing missing values

@@ -49,8 +49,9 @@ byInterval <- summarise(
 
 plot(byInterval$interval, byInterval$steps, type="l", xlab= "Interval", ylab= "Mean Number of Steps")
 
-maxInterval = which.max(byInterval$steps)
-maxIntervalSteps = byInterval[maxInterval, 'steps']
+maxIntervalIndex = which.max(byInterval$steps)
+maxInterval = byInterval[maxIntervalIndex, 'interval']
+maxIntervalSteps = byInterval[maxIntervalIndex, 'steps']
 ```
 Interval `r maxInterval` contains the maximum average number of steps across all days in the dataset (`r maxIntervalSteps`).
 
