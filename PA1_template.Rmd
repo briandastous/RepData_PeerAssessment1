@@ -52,7 +52,7 @@ plot(byInterval$interval, byInterval$steps, type="l", xlab= "Interval", ylab= "M
 maxInterval = which.max(byInterval$steps)
 maxIntervalSteps = byInterval[maxInterval, 'steps']
 ```
-Interval `r maxInterval` on average across all the days in the dataset, contains the maximum number of steps (`r maxIntervalSteps`).
+Interval `r maxInterval` contains the maximum average number of steps across all days in the dataset (`r maxIntervalSteps`).
 
 
 ## Imputing missing values
